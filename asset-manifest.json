@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MOHI-UDDIN-AKBAR/React-project-1/static/css/main.ae007378.css",
+    "main.js": "/MOHI-UDDIN-AKBAR/React-project-1/static/js/main.df238409.js",
+    "index.html": "/MOHI-UDDIN-AKBAR/React-project-1/index.html",
+    "main.ae007378.css.map": "/MOHI-UDDIN-AKBAR/React-project-1/static/css/main.ae007378.css.map",
+    "main.df238409.js.map": "/MOHI-UDDIN-AKBAR/React-project-1/static/js/main.df238409.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae007378.css",
+    "static/js/main.df238409.js"
+  ]
+}
