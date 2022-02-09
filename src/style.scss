@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  @include flexCenter;
+  background-color: #1f2633;
+}
+img {
+  width: 80px;
+}
+.birthday {
+  @include flexCenter();
+  border-radius: 10px;
+  width: 400px;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+  h1 {
+    padding: 0.5rem;
+    color: #1f2633;
+  }
+}
+.containInfo {
+  width: 100%;
+  .person {
+    @include flexCenter();
+    margin: 13px auto;
+    justify-content: space-between;
+    position: relative;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .personInfo {
+      flex-basis: 60%;
+      h2 {
+        margin: 0;
+        padding: 0.5rem 0;
+      }
+      span {
+        color: rgb(46, 45, 45);
+      }
+    }
+    button {
+      position: absolute;
+      right: 10px;
+      border: none;
+      background-color: white;
+      visibility: hidden;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  .person:hover {
+    button {
+      visibility: visible;
+    }
+  }
+}
+.clearAll {
+  width: 90%;
+  font-size: 20px;
+  padding: 0.7rem;
+  border: none;
+  background-color: #1d458f;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: #0d2c66;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .birthday {
+    width: 340px;
+  }
+}
